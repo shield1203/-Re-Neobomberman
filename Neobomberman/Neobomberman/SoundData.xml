@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<Sound>
+  <BGM count="8">
+    <Data>Resource\\Sound\\Intro_BGM.mp3</Data>
+    <Data>Resource\\Sound\\Selection_BGM.mp3</Data>
+    <Data>Resource\\Sound\\BattleMap1_BGM.mp3</Data>
+    <Data>Resource\\Sound\\BattleMap2_BGM.mp3</Data>
+    <Data>Resource\\Sound\\BattleResult_BGM.mp3</Data>
+    <Data>Resource\\Sound\\GameScene_BGM.mp3</Data>
+    <Data>Resource\\Sound\\Stage1_BGM.mp3</Data>
+    <Data>Resource\\Sound\\Stage_Clear.mp3</Data>
+  </BGM>
+  
+  <Effect count="9">
+    <Data>Resource\\Sound\\Coin.wav</Data>
+    <Data>Resource\\Sound\\Button.wav</Data>
+    <Data>Resource\\Sound\\Select.wav</Data>
+    <Data>Resource\\Sound\\Item.wav</Data>
+    <Data>Resource\\Sound\\Walk.wav</Data>
+    <Data>Resource\\Sound\\Ready.wav</Data>
+    <Data>Resource\\Sound\\SetBomb.wav</Data>
+    <Data>Resource\\Sound\\Win.mp3</Data>
+    <Data>Resource\\Sound\\Boom.wav</Data>
+  </Effect>
+</Sound>

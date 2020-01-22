@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<Resource>
+  <Intro>
+    <Data>Resource\\Intro\\Intro.bmp</Data>
+    <Data>Resource\\Intro\\Number.bmp</Data>
+    <Data>Resource\\Intro\\Text.bmp</Data>
+  </Intro>
+
+  <ModeSelect>
+    <Data>Resource\\Sound\\Coin.wav</Data>
+    <Data>Resource\\Sound\\Button.wav</Data>
+    <Data>Resource\\Sound\\Select.wav</Data>
+    <Data>Resource\\Sound\\Item.wav</Data>
+    <Data>Resource\\Sound\\Walk.wav</Data>
+    <Data>Resource\\Sound\\Ready.wav</Data>
+    <Data>Resource\\Sound\\SetBomb.wav</Data>
+    <Data>Resource\\Sound\\Win.mp3</Data>
+    <Data>Resource\\Sound\\Boom.wav</Data>
+  </ModeSelect>
+</Resource>
