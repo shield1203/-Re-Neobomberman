@@ -4,15 +4,12 @@ class CBomberSelect;
 class CBattle;
 class CBattleResult;
 
-class CBattleManager {
+class CBattleSystem {
 private:
-	static CBattleManager* inst;
+	
 
-	CBattleManager(HWND hWnd, HDC hBackbuffer);
 public:
-	static CBattleManager* getInstance(HWND hWnd, HDC hBackbuffer);
-
-	HWND hWnd;
+	
 	HDC hBackbuffer;
 
 	GAME_STEP gameStep;
@@ -27,5 +24,6 @@ public:
 	GAME_STEP Update();
 	void Render();
 
-	~CBattleManager();
+	CBattleSystem(HDC hBackbuffer);
+	~CBattleSystem();
 };

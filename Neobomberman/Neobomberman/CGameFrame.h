@@ -1,6 +1,7 @@
 #pragma once
 
-class CGameFrame {
+class CGameFrame 
+{
 protected:
 	HDC hBackbuffer;
 	HDC hFadeDC;
@@ -23,6 +24,6 @@ public:
 	void FadeOut();
 	void FadeIn();
 
-	CGameFrame(HDC hBackbuffer);
+	CGameFrame(HDC);
 	~CGameFrame();
 };

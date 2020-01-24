@@ -1,7 +1,7 @@
 #include"CBomber.h"
 
 #include"framework.h"
-#include"CSoundManager.h"
+#include"CSoundSystem.h"
 
 CBomber::CBomber() {
 }

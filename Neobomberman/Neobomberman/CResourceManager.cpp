@@ -165,9 +165,14 @@ void CResourceManager::ReleaseData()
 	m_spriteData.clear();
 }
 
+void CResourceManager::GetSpriteData(SpriteData& spriteData, unsigned int spriteNum)
+{
+	spriteData = *m_spriteData[spriteNum];
+}
+
 void CResourceManager::DrawingBackground(HDC Backbuffer, unsigned int backgroundNum)
 {
-	BitBlt(Backbuffer, 0, 0, WIN_RIGHT, WIN_LEFT, m_hImageDC[*m_backgroundData[backgroundNum]], 0, 0, SRCCOPY);
+	BitBlt(Backbuffer, 0, 0, WIN_RIGHT, WIN_BOTTOM, m_hImageDC[*m_backgroundData[backgroundNum]], 0, 0, SRCCOPY);
 }
 
 void CResourceManager::DrawingSprite(HDC Backbuffer, unsigned int spriteNum)
@@ -175,4 +180,11 @@ void CResourceManager::DrawingSprite(HDC Backbuffer, unsigned int spriteNum)
 	TransparentBlt(Backbuffer, m_spriteData[spriteNum]->xpos, m_spriteData[spriteNum]->ypos, m_spriteData[spriteNum]->width, m_spriteData[spriteNum]->high, 
 		m_hImageDC[m_spriteData[spriteNum]->imageNum], m_spriteData[spriteNum]->originXpos, m_spriteData[spriteNum]->originYpos, m_spriteData[spriteNum]->originWidth, m_spriteData[spriteNum]->originHigh,
 		RGB(m_spriteData[spriteNum]->r, m_spriteData[spriteNum]->g, m_spriteData[spriteNum]->b));
+}
+
+void CResourceManager::DrawingSprite(HDC Backbuffer, SpriteData spriteData)
+{
+	TransparentBlt(Backbuffer, spriteData.xpos, spriteData.ypos, spriteData.width, spriteData.high,
+		m_hImageDC[spriteData.imageNum], spriteData.originXpos, spriteData.originYpos, spriteData.originWidth, spriteData.originHigh,
+		RGB(spriteData.r, spriteData.g, spriteData.b));
 }

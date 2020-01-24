@@ -6,25 +6,25 @@ class CResourceManager;
 
 enum BACKGROUND : unsigned int { BACKGROUND01 };
 enum SPRITES { PUSH_1P_START, CRADIT, CRADITS, COIN_COUNT };
+enum SETTING : unsigned int { COIN_SPACE = 28, CHECK_COIN_TIME = 200, CHECK_KEY_TIME = 150, MAX_COIN = 99 };
 
 class CIntro : public CGameFrame 
 {
 private:
-	GAME_STEP m_GameStep = STEP_INTRO;
+	GAME_STEP m_gameStep = STEP_INTRO;
 
 	CResourceManager* m_ResourceManeger = nullptr;
 
-	int nCurTime = 0;
-	int nButtonTime = 0;
-	int nTextTime = 0;
-	int nCoin = 0;
+	unsigned int m_curTime = 0;
+	unsigned int nButtonTime = 0;
+	unsigned int m_curCoinCount = 0;
 
-	bool bCoin = false;
+	bool bCoinBlink = false;
 public:
-	CIntro(HDC hBackbuffer);
+	CIntro(HDC);
 	~CIntro();
 
-	void CheckKey();
+	void CheckPressKey();
 	void CheckCoin();
 
 	virtual void Init();

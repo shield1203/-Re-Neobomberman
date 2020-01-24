@@ -1,123 +1,119 @@
 #include"CModeSelect.h"
-#include"framework.h"
 
+#include"CGameFrame.h"
 #include"CSoundSystem.h"
+#include"CResourceManager.h"
 
-CModeSelect::CModeSelect(HWND hWnd, HDC hBackbuffer) : CGameFrame(hWnd, hBackbuffer)
+CModeSelect::CModeSelect(HDC hBackbuffer) : CGameFrame(hBackbuffer)
 {
-	hBackgroundStoryDC = CreateBmpDC("Resource\\ModeSelect\\BackgroundStory.bmp");
-	hBackgroundBattleDC = CreateBmpDC("Resource\\ModeSelect\\BackgroundBattle.bmp");
-	hSelectorDC = CreateBmpDC("Resource\\ModeSelect\\Selector.bmp");
-
-	gameStep = STEP_MODE_SELECT;
-	mode = SELECT_STORY;
-
-	dwCurTime = 0;
-	dwButtonTime = 0;
-	dwMoveTime = 0;
-
-	nAlpha = 255;
-	bFadeIn = true;
-	bFadeOut = false;
-	BlendFunction.SourceConstantAlpha = nAlpha;
-
-	CSoundSystem::getInstance()->StartBGM(SELECT_BGM);
+	m_ResourceManeger = CResourceManager::getInstance();
 }
 
 CModeSelect::~CModeSelect() 
 {
-	DeleteDC(hBackgroundStoryDC);
-	DeleteDC(hBackgroundBattleDC);
-	DeleteDC(hSelectorDC);
 }
 
-void CModeSelect::CheckKey() 
+void CModeSelect::Init()
 {
-	if ((GetKeyState(VK_UP) < 0) && dwCurTime - dwButtonTime > 150)
+	nAlpha = ALPHA_MAX;
+	bFadeIn = true;
+	bFadeOut = false;
+	BlendFunction.SourceConstantAlpha = nAlpha;
+
+	CSoundSystem::getInstance()->StopBGM();
+	CSoundSystem::getInstance()->StartBGM(SELECT_BGM);
+}
+
+void CModeSelect::CheckPressKey()
+{
+	if ((GetKeyState(VK_UP) < 0) && m_curTime - m_buttonTime > CHECK_KEY_TIME)
 	{
-		dwButtonTime = dwCurTime;
-		selector.state = SELECTOR_MOVE;
-		selector.way = WAY_UP;
+		m_buttonTime = m_curTime;
+		m_selectorState = MOVE;
+		m_selectorWay = WAY_UP;
 
 		CSoundSystem::getInstance()->StartEffect(SOUND_BUTTON);
 	}
-	else if ((GetKeyState(VK_DOWN) < 0) && dwCurTime - dwButtonTime > 150) 
+	else if ((GetKeyState(VK_DOWN) < 0) && m_curTime - m_buttonTime > CHECK_KEY_TIME)
 	{
-		dwButtonTime = dwCurTime;
-		selector.state = SELECTOR_MOVE;
-		selector.way = WAY_DOWN;
+		m_buttonTime = m_curTime;
+		m_selectorState = MOVE;
+		m_selectorWay = WAY_DOWN;
 
 		CSoundSystem::getInstance()->StartEffect(SOUND_BUTTON);
 	}
-	else if ((GetKeyState(KEY_K) < 0) && dwCurTime - dwButtonTime > 150 && selector.way == WAY_STOP) 
+	else if ((GetKeyState(KEY_K) < 0) && m_curTime - m_buttonTime > CHECK_KEY_TIME && m_selectorWay == WAY_STOP)
 	{
-		dwButtonTime = dwCurTime;
-		selector.state = SELECTOR_SELECT;
-		selector.dwSelectorAni = 0;
+		m_buttonTime = m_curTime;
+		m_selectorState = SELECT;
+		m_ResourceManeger->m_spriteData[SELECTOR]->originXpos = 0;
 
 		CSoundSystem::getInstance()->StartEffect(SOUND_SELECT);
 	}
 }
 
+void CModeSelect::CheckSelectedMode()
+{
+	if (m_ResourceManeger->m_spriteData[SELECTOR]->ypos < MIDDLE)
+	{
+		m_curSelectedMode = STORY;
+		m_ResourceManeger->m_spriteData[SELECT_CIRCLE]->ypos = STORY_YPOS;
+	}
+	else
+	{
+		m_curSelectedMode = BATTLE;
+		m_ResourceManeger->m_spriteData[SELECT_CIRCLE]->ypos = BATTLE_YPOS;
+	}
+}
+
 void CModeSelect::SetAni() 
 {
-	if (selector.fYPos < 540) 
+	switch (m_selectorState)
 	{
-		mode = SELECT_STORY;
-	}
-	else 
-	{
-		mode = SELECT_BATTLE;
-	}
-	
-	switch (selector.state) 
-	{
-		case SELECTOR_MOVE:
-		{
-			if (dwCurTime - selector.dwSelectorAniTime > 170 && selector.way != WAY_STOP) 
+		case MOVE:
+			if (m_curTime - m_ResourceManeger->m_spriteData[SELECTOR]->time > CHECK_MOVE_ANI_TIME && m_selectorWay != WAY_STOP)
 			{
-				selector.dwSelectorAniTime = dwCurTime;
+				m_ResourceManeger->m_spriteData[SELECTOR]->time = m_curTime;
 
-				if (selector.dwSelectorAni < SELECTOR_MOVE_MAX) 
+				if (m_ResourceManeger->m_spriteData[SELECTOR]->originXpos < MOVE_ANI_MAX)
 				{
-					selector.dwSelectorAni += 150;
+					m_ResourceManeger->m_spriteData[SELECTOR]->originXpos += m_ResourceManeger->m_spriteData[SELECTOR]->originWidth;
 				}
-				else 
+				else
 				{
-					selector.dwSelectorAni = 0;
+					m_ResourceManeger->m_spriteData[SELECTOR]->originXpos = 0;
 				}
 			}
 			break;
-		}
-		case SELECTOR_SELECT:
-		{
-			if (dwCurTime - selector.dwSelectorAniTime > 50) 
+		case SELECT:
+			if (m_curTime - m_ResourceManeger->m_spriteData[SELECTOR]->time > CHECK_SELECT_ANI_TIME)
 			{
-				selector.dwSelectorAniTime = dwCurTime;
+				m_ResourceManeger->m_spriteData[SELECTOR]->time = m_curTime;
 
-				if (selector.dwSelectorAni == SELECTOR_SELECT_MAX) 
+				if (m_ResourceManeger->m_spriteData[SELECTOR]->originXpos == CIRCLE_MAX)
 				{
-					selector.dwSelectorAni = 0;
-					selector.bSelect = true;
-					selector.state = SELECTOR_IDLE;
+					m_ResourceManeger->m_spriteData[SELECTOR]->originXpos = 0;
+					bSelect = true;
+					m_ResourceManeger->m_spriteData[SELECTOR]->originYpos = IDLE;
 				}
-				else 
+				else
 				{
-					selector.dwSelectorAni += 150;
+					m_ResourceManeger->m_spriteData[SELECTOR]->originXpos += m_ResourceManeger->m_spriteData[SELECTOR]->originWidth;
 				}
 			}
 			break;
-		}
 	}
 
-	if (dwCurTime - selector.dwSelectAniTime > 37 && selector.bSelect) 
-	{
-		selector.dwSelectAniTime = dwCurTime;
-		if (selector.dwSelectAni != SELECTOR_SELECT_MAX) 
-		{
-			selector.dwSelectAni += 200;
 
-			if (selector.dwSelectAni == SELECTOR_SELECT_MAX) 
+
+	if (m_curTime - m_ResourceManeger->m_spriteData[SELECT_CIRCLE]->time > CHECK_CIRCLE_ANI_TIME && bSelect)
+	{
+		m_ResourceManeger->m_spriteData[SELECT_CIRCLE]->time = m_curTime;
+		if (m_ResourceManeger->m_spriteData[SELECT_CIRCLE]->originXpos != CIRCLE_MAX)
+		{
+			m_ResourceManeger->m_spriteData[SELECT_CIRCLE]->originXpos += m_ResourceManeger->m_spriteData[SELECT_CIRCLE]->originWidth;
+
+			if (m_ResourceManeger->m_spriteData[SELECT_CIRCLE]->originXpos == CIRCLE_MAX)
 			{
 				bFadeOut = true;
 			}
@@ -127,110 +123,100 @@ void CModeSelect::SetAni()
 
 void CModeSelect::Move() 
 {
-	if (dwCurTime - dwMoveTime > 10) 
+	if (m_curTime - m_moveTime > CHECK_MOVE_TIME)
 	{
-		dwMoveTime = dwCurTime;
-		switch (selector.way)
+		m_moveTime = m_curTime;
+		switch (m_selectorWay)
 		{
 			case WAY_UP:
-			{
-				if (selector.fYPos > 380) 
+				if (m_ResourceManeger->m_spriteData[SELECTOR]->ypos > MOVE_MIN_YPOS)
 				{
-					selector.fYPos -= 8;
+					m_ResourceManeger->m_spriteData[SELECTOR]->ypos -= MOVE_SPEED;
 				}
-				else 
+				else
 				{
-					selector.way = WAY_STOP;
-					selector.fYPos = 380;
-					selector.dwSelectorAni = 0;
+					m_selectorWay = WAY_STOP;
+					m_ResourceManeger->m_spriteData[SELECTOR]->ypos = MOVE_MIN_YPOS;
+					m_ResourceManeger->m_spriteData[SELECTOR]->originXpos = 0;
 				}
 				break;
-			}
 			case WAY_DOWN:
-			{
-				if (selector.fYPos < 700) 
+				if (m_ResourceManeger->m_spriteData[SELECTOR]->ypos < MOVE_MAX_YPOS)
 				{
-					selector.fYPos += 8;
+					m_ResourceManeger->m_spriteData[SELECTOR]->ypos += MOVE_SPEED;
 				}
 				else {
-					selector.way = WAY_STOP;
-					selector.fYPos = 700;
-					selector.dwSelectorAni = 0;
+					m_selectorWay = WAY_STOP;
+					m_ResourceManeger->m_spriteData[SELECTOR]->ypos = MOVE_MAX_YPOS;
+					m_ResourceManeger->m_spriteData[SELECTOR]->originXpos = 0;
 				}
 				break;
-			}
 		break;
 		}
+
+		m_ResourceManeger->m_spriteData[SELECTOR]->originYpos = m_selectorWay;
 	}
 }
 
 GAME_STEP CModeSelect::Update() 
 {
-	dwCurTime = GetTickCount64();
+	m_curTime = GetTickCount64();
 
-	if (!selector.bSelect && selector.state != SELECTOR_SELECT && !bFadeIn && !bFadeOut) 
+	if (!bSelect && m_selectorState != SELECT && !bFadeIn && !bFadeOut)
 	{
-		CheckKey();
+		CheckPressKey();
 		Move();
 	}
 
-	if (bFadeIn && dwCurTime - dwAlphaTime > 10) 
+	if (bFadeIn && m_curTime - dwAlphaTime > ALPHA_CHECK_TIME)
 	{
-		dwAlphaTime = dwCurTime;
+		dwAlphaTime = m_curTime;
 		FadeIn();
 	}
 
-	if (bFadeOut && dwCurTime - dwAlphaTime > 10) 
+	if (bFadeOut && m_curTime - dwAlphaTime > ALPHA_CHECK_TIME)
 	{
-		dwAlphaTime = dwCurTime;
+		dwAlphaTime = m_curTime;
 		FadeOut();
 
 		if (!bFadeOut) 
 		{
-			if (mode == SELECT_BATTLE) 
+			if (m_curSelectedMode == BATTLE)
 			{
-				gameStep = STEP_BATTLE;
+				m_gameStep = STEP_BATTLE;
 			}
-			else if(mode == SELECT_STORY) 
+			else if(m_curSelectedMode == STORY)
 			{
-				gameStep = STEP_STORY;
+				m_gameStep = STEP_STORY;
 			}
 		}
 	}
 
 	SetAni();
 
-	return gameStep;
+	return m_gameStep;
 }
 
 void CModeSelect::Render() 
 {
-	if (mode == SELECT_STORY) 
+	if (m_curSelectedMode == STORY)
 	{
-		BitBlt(hBackbuffer, 0, 0, WIN_RIGHT, WIN_BOTTOM, hBackgroundStoryDC, 0, 0, SRCCOPY); // 배경
+		m_ResourceManeger->DrawingBackground(hBackbuffer, BACKGROUND_STORY);
 	}
 	else 
 	{
-		BitBlt(hBackbuffer, 0, 0, WIN_RIGHT, WIN_BOTTOM, hBackgroundBattleDC, 0, 0, SRCCOPY); // 배경
+		m_ResourceManeger->DrawingBackground(hBackbuffer, BACKGROUND_BATTLE);
 	}
 
-	TransparentBlt(hBackbuffer, selector.fXPos, selector.fYPos, 150, 150, hSelectorDC, 
-		selector.dwSelectorAni, selector.state, 150, 150, RGB(0, 248, 0)); // 셀렉터(화이트봉)
+	m_ResourceManeger->DrawingSprite(hBackbuffer, SELECTOR);
 
-	if (selector.bSelect) 
+	if (bSelect)
 	{
-		if (mode == SELECT_STORY) 
-		{
-			TransparentBlt(hBackbuffer, 180, 350, 200, 170, hSelectorDC, selector.dwSelectAni, 300, 200, 170, RGB(0, 248, 0)); // 선택시 그리는 원
-		}
-		else if (mode == SELECT_BATTLE) 
-		{
-			TransparentBlt(hBackbuffer, 180, 680, 200, 170, hSelectorDC, selector.dwSelectAni, 300, 200, 170, RGB(0, 248, 0)); 
-		}
+		m_ResourceManeger->DrawingSprite(hBackbuffer, SELECT_CIRCLE);
 	}
 
 	if (bFadeIn || bFadeOut) 
 	{
-		AlphaBlend(hBackbuffer, 0, 0, 1216, 896, hFadeDC, 0, 0, 1216, 896, BlendFunction);
+		AlphaBlend(hBackbuffer, 0, 0, WIN_RIGHT, WIN_BOTTOM, hFadeDC, 0, 0, WIN_RIGHT, WIN_BOTTOM, BlendFunction);
 	}
 }

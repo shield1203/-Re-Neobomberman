@@ -20,28 +20,32 @@ CGameFrame::CGameFrame(HDC hBackbuffer)
 
 CGameFrame::~CGameFrame() 
 {
-	DeleteDC(hFadeDC);
+	ReleaseDC(g_hWnd, hFadeDC);
 	hFadeDC = nullptr;
 }
 
 void CGameFrame::FadeOut() 
 { // °Ë°Ô
-	if (nAlpha < 255) {
-		nAlpha += 15;
+	if (nAlpha < ALPHA_MAX) 
+	{
+		nAlpha += ALPHA_SPEED;
 		BlendFunction.SourceConstantAlpha = nAlpha;
 	}
-	else {
+	else 
+	{
 		bFadeOut = false;
 	}
 }
 
 void CGameFrame::FadeIn() 
 { // ¹à°Ô
-	if (nAlpha > 0) {
-		nAlpha -= 15;
+	if (nAlpha > ALPHA_MIN)
+	{
+		nAlpha -= ALPHA_SPEED;
 		BlendFunction.SourceConstantAlpha = nAlpha;
 	}
-	else {
+	else 
+	{
 		bFadeIn = false;
 	}
 }

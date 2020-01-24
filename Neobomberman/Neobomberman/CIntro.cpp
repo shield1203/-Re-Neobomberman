@@ -21,64 +21,66 @@ void CIntro::Init()
 
 GAME_STEP CIntro::Update() 
 {
-	nCurTime = GetTickCount64();
+	m_curTime = GetTickCount64();
 	CheckCoin();
-	CheckKey();
+	CheckPressKey();
 
-	return m_GameStep;
+	return m_gameStep;
 }
 
-void CIntro::CheckKey()
+void CIntro::CheckPressKey()
 {
-	if (GetKeyState(KEY_5) < 0 && nCurTime - nButtonTime > 150) 
+	if (GetKeyState(KEY_5) < 0 && m_curTime - nButtonTime > CHECK_KEY_TIME)
 	{ // 코인 투입!
-		nButtonTime = nCurTime;
+		nButtonTime = m_curTime;
 
-		if (nCoin < 100) 
+		if (m_curCoinCount <= MAX_COIN)
 		{
-			nCoin++;
-			bCoin = true;
+			m_curCoinCount++;
+			bCoinBlink = true;
 		}
 		CSoundSystem::getInstance()->StopBGM();
 		CSoundSystem::getInstance()->StartEffect(SOUND_COIN);
 	}
-	else if (GetKeyState(KEY_1) < 0 && nCurTime - nButtonTime > 150) 
+	else if (GetKeyState(KEY_1) < 0 && m_curTime - nButtonTime > CHECK_KEY_TIME)
 	{
-		nButtonTime = nCurTime;
+		nButtonTime = m_curTime;
 
-		if (nCoin > 0) 
+		if (m_curCoinCount > 0)
 		{
-			m_GameStep = STEP_MODE_SELECT;
+			m_gameStep = STEP_MODE_SELECT;
 		}
 	}
 }
 
 void CIntro::CheckCoin() 
 {
-	if (nCurTime - nTextTime > 200 && nCoin == 0) 
+	if (m_curTime - m_ResourceManeger->m_spriteData[PUSH_1P_START]->time > CHECK_COIN_TIME && m_curCoinCount == 0)
 	{
-		nTextTime = nCurTime;
-		if (bCoin) 
+		m_ResourceManeger->m_spriteData[PUSH_1P_START]->time = m_curTime;
+		if (bCoinBlink)
 		{
-			bCoin = false;
+			bCoinBlink = false;
 		}
 		else 
 		{
-			bCoin = true;
+			bCoinBlink = true;
 		}
 	}
 }
 
 void CIntro::Render()
 {
+	SpriteData spriteData;
+
 	m_ResourceManeger->DrawingBackground(hBackbuffer, BACKGROUND01);
 
-	if (bCoin)
+	if (bCoinBlink)
 	{
 		m_ResourceManeger->DrawingSprite(hBackbuffer, PUSH_1P_START);
 	}
 
-	if (nCoin >= 2)
+	if (m_curCoinCount >= 2)
 	{
 		m_ResourceManeger->DrawingSprite(hBackbuffer, CRADITS);
 	}
@@ -87,6 +89,10 @@ void CIntro::Render()
 		m_ResourceManeger->DrawingSprite(hBackbuffer, CRADIT);
 	}
 
-	TransparentBlt(hBackbuffer, 1114, 865, 28, 32, hNumberDC, (nCoin / 10) * 28, 0, 28, 32, RGB(R_COLOR, G_COLOR, B_COLOR));
-	TransparentBlt(hBackbuffer, 1142, 865, 28, 32, hNumberDC, (nCoin % 10) * 28, 0, 28, 32, RGB(R_COLOR, G_COLOR, B_COLOR));
+	m_ResourceManeger->GetSpriteData(spriteData, COIN_COUNT);
+	spriteData.originXpos = (m_curCoinCount / 10) * COIN_SPACE;
+	m_ResourceManeger->DrawingSprite(hBackbuffer, spriteData);
+	spriteData.xpos += COIN_SPACE;
+	spriteData.originXpos = (m_curCoinCount % 10) * COIN_SPACE;
+	m_ResourceManeger->DrawingSprite(hBackbuffer, spriteData);
 }

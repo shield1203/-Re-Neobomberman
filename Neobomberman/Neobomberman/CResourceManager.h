@@ -14,6 +14,9 @@ struct SpriteData
 
 	// 제외 컬러값
 	unsigned int r, g, b;
+
+	// 프레임 시간
+	unsigned int time = 0;
 };
 
 class CResourceManager
@@ -35,8 +38,10 @@ public:
 	HDC CreateBmpDC(const char*);
 	void ReleaseData();
 
+	void GetSpriteData(SpriteData&, unsigned int);
 	void DrawingBackground(HDC, unsigned int);
 	void DrawingSprite(HDC, unsigned int);
+	void DrawingSprite(HDC, SpriteData);
 
 	~CResourceManager();
 };
