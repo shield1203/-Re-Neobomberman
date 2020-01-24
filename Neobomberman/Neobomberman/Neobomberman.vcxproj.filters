@@ -16,23 +16,29 @@
     <Filter Include="소스 파일\xml">
       <UniqueIdentifier>{c3402ba6-1702-4f91-91d7-95abffbd91a9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="헤더 파일\Manager">
+    <Filter Include="헤더 파일\System">
       <UniqueIdentifier>{f0036667-88ca-4801-a497-38e231091c38}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\Manager">
-      <UniqueIdentifier>{1d2b0a05-efcf-4409-91ab-24f426ceb5ca}</UniqueIdentifier>
+    <Filter Include="헤더 파일\Manager">
+      <UniqueIdentifier>{2e104a1b-a255-4a4e-ae69-c0c2ba44cc06}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\Manager\BattleManager">
-      <UniqueIdentifier>{52cb19d9-b58f-415e-8874-2436c436be6f}</UniqueIdentifier>
+    <Filter Include="헤더 파일\Define">
+      <UniqueIdentifier>{c5c7e5b9-ce9d-4346-a7c8-e3fb90942619}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\Manager\StoryManager">
-      <UniqueIdentifier>{8a7387ee-8e5b-403d-8424-8b2d9bb7420a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="헤더 파일\Manager\BattleManager">
+    <Filter Include="헤더 파일\System\BattleSystem">
       <UniqueIdentifier>{c3363646-13f8-48c3-9ea1-f76cb6262a99}</UniqueIdentifier>
     </Filter>
-    <Filter Include="헤더 파일\Manager\StoryManager">
+    <Filter Include="헤더 파일\System\StorySystem">
       <UniqueIdentifier>{033087f7-e53c-4705-a488-713ded550352}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\System">
+      <UniqueIdentifier>{1d2b0a05-efcf-4409-91ab-24f426ceb5ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\System\StorySystem">
+      <UniqueIdentifier>{8a7387ee-8e5b-403d-8424-8b2d9bb7420a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\System\BattleSystem">
+      <UniqueIdentifier>{52cb19d9-b58f-415e-8874-2436c436be6f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -48,9 +54,6 @@
     <ClInclude Include="Neobomberman.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Define.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="CIntro.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
@@ -60,32 +63,23 @@
     <ClInclude Include="tinyxml.h">
       <Filter>소스 파일\xml</Filter>
     </ClInclude>
-    <ClInclude Include="CBattleManager.h">
-      <Filter>헤더 파일\Manager</Filter>
-    </ClInclude>
-    <ClInclude Include="CProcessManager.h">
-      <Filter>헤더 파일\Manager</Filter>
-    </ClInclude>
-    <ClInclude Include="CStoryManager.h">
-      <Filter>헤더 파일\Manager</Filter>
-    </ClInclude>
     <ClInclude Include="CGameFrame.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="CBomberSelect.h">
-      <Filter>헤더 파일\Manager\BattleManager</Filter>
+      <Filter>헤더 파일\System\BattleSystem</Filter>
     </ClInclude>
     <ClInclude Include="CBattle.h">
-      <Filter>헤더 파일\Manager\BattleManager</Filter>
+      <Filter>헤더 파일\System\BattleSystem</Filter>
     </ClInclude>
     <ClInclude Include="CMapSelect.h">
-      <Filter>헤더 파일\Manager\BattleManager</Filter>
+      <Filter>헤더 파일\System\BattleSystem</Filter>
     </ClInclude>
     <ClInclude Include="CGameScene.h">
-      <Filter>헤더 파일\Manager\StoryManager</Filter>
+      <Filter>헤더 파일\System\StorySystem</Filter>
     </ClInclude>
     <ClInclude Include="CStory.h">
-      <Filter>헤더 파일\Manager\StoryManager</Filter>
+      <Filter>헤더 파일\System\StorySystem</Filter>
     </ClInclude>
     <ClInclude Include="CEnemy.h">
       <Filter>헤더 파일</Filter>
@@ -103,10 +97,31 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="CBattleResult.h">
-      <Filter>헤더 파일\Manager\BattleManager</Filter>
+      <Filter>헤더 파일\System\BattleSystem</Filter>
     </ClInclude>
-    <ClInclude Include="CSoundManager.h">
+    <ClInclude Include="CSoundSystem.h">
+      <Filter>헤더 파일\System</Filter>
+    </ClInclude>
+    <ClInclude Include="CResourceManager.h">
       <Filter>헤더 파일\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Define.h">
+      <Filter>헤더 파일\Define</Filter>
+    </ClInclude>
+    <ClInclude Include="DefineEnum.h">
+      <Filter>헤더 파일\Define</Filter>
+    </ClInclude>
+    <ClInclude Include="CProcessSystem.h">
+      <Filter>헤더 파일\System</Filter>
+    </ClInclude>
+    <ClInclude Include="CBattleSystem.h">
+      <Filter>헤더 파일\System</Filter>
+    </ClInclude>
+    <ClInclude Include="CStorySystem.h">
+      <Filter>헤더 파일\System</Filter>
+    </ClInclude>
+    <ClInclude Include="DefineAPI.h">
+      <Filter>헤더 파일\Define</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -134,32 +149,23 @@
     <ClCompile Include="tinyxmlparser.cpp">
       <Filter>소스 파일\xml</Filter>
     </ClCompile>
-    <ClCompile Include="CProcessManager.cpp">
-      <Filter>소스 파일\Manager</Filter>
-    </ClCompile>
-    <ClCompile Include="CBattleManager.cpp">
-      <Filter>소스 파일\Manager</Filter>
-    </ClCompile>
     <ClCompile Include="CBattle.cpp">
-      <Filter>소스 파일\Manager\BattleManager</Filter>
+      <Filter>소스 파일\System\BattleSystem</Filter>
     </ClCompile>
     <ClCompile Include="CBomberSelect.cpp">
-      <Filter>소스 파일\Manager\BattleManager</Filter>
+      <Filter>소스 파일\System\BattleSystem</Filter>
     </ClCompile>
     <ClCompile Include="CMapSelect.cpp">
-      <Filter>소스 파일\Manager\BattleManager</Filter>
-    </ClCompile>
-    <ClCompile Include="CStoryManager.cpp">
-      <Filter>소스 파일\Manager</Filter>
+      <Filter>소스 파일\System\BattleSystem</Filter>
     </ClCompile>
     <ClCompile Include="CGameScene.cpp">
-      <Filter>소스 파일\Manager\StoryManager</Filter>
+      <Filter>소스 파일\System\StorySystem</Filter>
     </ClCompile>
     <ClCompile Include="CStory.cpp">
-      <Filter>소스 파일\Manager\StoryManager</Filter>
+      <Filter>소스 파일\System\StorySystem</Filter>
     </ClCompile>
     <ClCompile Include="CEnemy.cpp">
-      <Filter>소스 파일\Manager\StoryManager</Filter>
+      <Filter>소스 파일\System\StorySystem</Filter>
     </ClCompile>
     <ClCompile Include="CBomber.cpp">
       <Filter>소스 파일</Filter>
@@ -168,13 +174,25 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="CBattleResult.cpp">
-      <Filter>소스 파일\Manager\BattleManager</Filter>
+      <Filter>소스 파일\System\BattleSystem</Filter>
     </ClCompile>
     <ClCompile Include="CItem.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="CSoundManager.cpp">
-      <Filter>소스 파일\Manager</Filter>
+    <ClCompile Include="CSoundSystem.cpp">
+      <Filter>소스 파일\System</Filter>
+    </ClCompile>
+    <ClCompile Include="CResourceManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CProcessSystem.cpp">
+      <Filter>소스 파일\System</Filter>
+    </ClCompile>
+    <ClCompile Include="CStorySystem.cpp">
+      <Filter>소스 파일\System</Filter>
+    </ClCompile>
+    <ClCompile Include="CBattleSystem.cpp">
+      <Filter>소스 파일\System</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

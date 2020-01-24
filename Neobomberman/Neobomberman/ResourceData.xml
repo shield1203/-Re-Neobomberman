@@ -1,20 +1,31 @@
 <?xml version="1.0" ?>
 <Resource>
-  <Intro>
-    <Data>Resource\\Intro\\Intro.bmp</Data>
-    <Data>Resource\\Intro\\Number.bmp</Data>
-    <Data>Resource\\Intro\\Text.bmp</Data>
+  <Intro Image="3" Background="1" Sprite="4">
+    <ImagePath num="0">Resource\\Intro\\Intro.bmp</ImagePath>
+    <ImagePath num="1">Resource\\Intro\\Number.bmp</ImagePath>
+    <ImagePath num="2">Resource\\Intro\\Text.bmp</ImagePath>
+    <BackgroundData ImageNum="0"/>
+    <SpriteData ImageNum="2" xpos="448" ypos="578" width="415" high="32" originXpos="0" originYpos="0" originWidth="415" originHigh="32" r="0" g="248" b="0">PUSH_P1_START</SpriteData>
+    <SpriteData ImageNum="2" xpos="870" ypos="865" width="192" high="32" originXpos="0" originYpos="32" originWidth="192" originHigh="32" r="0" g="248" b="0">CRADIT</SpriteData>
+    <SpriteData ImageNum="2" xpos="870" ypos="865" width="224" high="32" originXpos="0" originYpos="64" originWidth="224" originHigh="32" r="0" g="248" b="0">CRADITS</SpriteData>
+    <SpriteData ImageNum="1" xpos="1114" ypos="865" width="28" high="32" originXpos="0" originYpos="0" originWidth="28" originHigh="32" r="0" g="248" b="0">COIN_COUNT</SpriteData>
   </Intro>
 
-  <ModeSelect>
-    <Data>Resource\\Sound\\Coin.wav</Data>
-    <Data>Resource\\Sound\\Button.wav</Data>
-    <Data>Resource\\Sound\\Select.wav</Data>
-    <Data>Resource\\Sound\\Item.wav</Data>
-    <Data>Resource\\Sound\\Walk.wav</Data>
-    <Data>Resource\\Sound\\Ready.wav</Data>
-    <Data>Resource\\Sound\\SetBomb.wav</Data>
-    <Data>Resource\\Sound\\Win.mp3</Data>
-    <Data>Resource\\Sound\\Boom.wav</Data>
+  <ModeSelect Image="3" Background="2" Sprite="2">
+    <ImagePath num="0">Resource\\ModeSelect\\BackgroundStory.bmp</ImagePath>
+    <ImagePath num="1">Resource\\ModeSelect\\BackgroundBattle.bmp</ImagePath>
+    <ImagePath num="2">Resource\\ModeSelect\\Selector.bmp</ImagePath>
+    <BackgroundData ImageNum="0"/>
+    <BackgroundData ImageNum="1"/>
+    <SpriteData ImageNum="2" xpos="40" ypos="380" width="150" high="150" originXpos="0" originYpos="1" originWidth="150" originHigh="150" r="0" g="248" b="0">셀렉터_화이트봉</SpriteData>
+    <SpriteData ImageNum="2" xpos="180" ypos="350" width="200" high="170" originXpos="0" originYpos="300" originWidth="200" originHigh="170" r="0" g="248" b="0">셀렉터가 그리는 원</SpriteData>
   </ModeSelect>
+
+  <Story Image="3" Background="0" Sprite="0">
+    <ImagePath></ImagePath>
+    <ImagePath></ImagePath>
+    <ImagePath></ImagePath>
+    <BackgroundData ImageNum="0"/>
+    <SpriteData ImageNum="2" xpos="40" ypos="380" width="150" high="150" originXpos="0" originYpos="1" originWidth="150" originHigh="150" r="0" g="248" b="0">셀렉터_화이트봉</SpriteData>
+  </Story>
 </Resource>

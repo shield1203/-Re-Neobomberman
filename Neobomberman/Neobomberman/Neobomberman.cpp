@@ -3,7 +3,7 @@
 
 #include "framework.h"
 #include "Neobomberman.h"
-#include"CProcessManager.h"
+#include"CProcessSystem.h"
 
 #define MAX_LOADSTRING 100
 
@@ -11,7 +11,7 @@
 HINSTANCE hInst;                                // 현재 인스턴스입니다.
 TCHAR szTitle[MAX_LOADSTRING];                  // 제목 표시줄 텍스트입니다.
 TCHAR szWindowClass[MAX_LOADSTRING];            // 기본 창 클래스 이름입니다.
-static HWND g_hWnd = NULL;
+HWND g_hWnd = NULL;
 RECT rtWindow = { WIN_LEFT, WIN_TOP, WIN_RIGHT, WIN_BOTTOM };
 SIZE szWindow;
 
@@ -46,7 +46,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 
     MSG msg;
 
-	CProcessManager* pProcessManager = new CProcessManager(g_hWnd);	
+	CProcessSystem* pProcessSystem = new CProcessSystem();
 
     // 기본 메시지 루프입니다:
 	while (1)
@@ -60,12 +60,11 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 			DispatchMessage(&msg);
 		}
 		else {
-			pProcessManager->Process();
+            pProcessSystem->Process();
 		}
 	}
 
-	delete pProcessManager;
-	pProcessManager = nullptr;
+    SafeDelete(pProcessSystem);
 
     return (int) msg.wParam;
 }

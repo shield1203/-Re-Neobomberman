@@ -1,90 +1,53 @@
 #include"CIntro.h"
-#include"CGameFrame.h"
-#include"CSoundManager.h"
-#include"tinyxml.h"
 
-CIntro::CIntro(HWND hWnd, HDC hBackbuffer) : CGameFrame(hWnd, hBackbuffer) 
+#include"CGameFrame.h"
+#include"CSoundSystem.h"
+#include"CResourceManager.h"
+
+CIntro::CIntro(HDC hBackbuffer) : CGameFrame(hBackbuffer) 
 { 
+	m_ResourceManeger = CResourceManager::getInstance();
 }
 
 CIntro::~CIntro() 
 {
-	DeleteDC(hIntroDC); 
-	hIntroDC = nullptr;
-	DeleteDC(hNumberDC);
-	hNumberDC = nullptr;
-	DeleteDC(hTextDC);
-	hTextDC = nullptr;
 }
 
 void CIntro::Init() 
 {
-	LoadData();
-
-	CSoundManager::getInstance()->StopBGM();
-	CSoundManager::getInstance()->StartBGM(INTRO_BGM);
-}
-
-void CIntro::LoadData()
-{
-	TiXmlDocument doc;
-	doc.LoadFile("ResourceData.xml");
-
-	TiXmlElement* pRoot = doc.FirstChildElement("Resource");
-	if (!pRoot) return;
-
-	TiXmlElement* pElem = pRoot->FirstChildElement("Intro")->FirstChildElement("Data");
-	hIntroDC = CreateBmpDC(pElem->GetText());
-	pElem = pElem->NextSiblingElement();
-	hNumberDC = CreateBmpDC(pElem->GetText());
-	pElem = pElem->NextSiblingElement();
-	hTextDC = CreateBmpDC(pElem->GetText());
+	CSoundSystem::getInstance()->StopBGM();
+	CSoundSystem::getInstance()->StartBGM(INTRO_BGM);
 }
 
 GAME_STEP CIntro::Update() 
 {
 	nCurTime = GetTickCount64();
 	CheckCoin();
-	PressKey();
+	CheckKey();
 
 	return m_GameStep;
 }
 
-void CIntro::Render() 
+void CIntro::CheckKey()
 {
-	BitBlt(hBackbuffer, 0, 0, WIN_RIGHT, WIN_BOTTOM, hIntroDC, 0, 0, SRCCOPY);
-
-	if (bCoin) {
-		TransparentBlt(hBackbuffer, 448, 578, 415, 32, hTextDC, 0, 0, 415, 32, RGB(R_COLOR, G_COLOR, B_COLOR)); // PUSH P1 START
-	}
-
-	if (nCoin >= 2) {
-		TransparentBlt(hBackbuffer, 870, 865, 224, 32, hTextDC, 0, 64, 224, 32, RGB(R_COLOR, G_COLOR, B_COLOR));
-	}
-	else {
-		TransparentBlt(hBackbuffer, 870, 865, 192, 32, hTextDC, 0, 32, 192, 32, RGB(R_COLOR, G_COLOR, B_COLOR)); // 크래딧
-	}
-
-	TransparentBlt(hBackbuffer, 1114, 865, 28, 32, hNumberDC, (nCoin / 10) * 28, 0, 28, 32, RGB(R_COLOR, G_COLOR, B_COLOR));
-	TransparentBlt(hBackbuffer, 1142, 865, 28, 32, hNumberDC, (nCoin % 10) * 28, 0, 28, 32, RGB(R_COLOR, G_COLOR, B_COLOR));
-}
-
-void CIntro::PressKey() 
-{
-	if (GetKeyState(KEY_5) < 0 && nCurTime - nButtonTime > 150) { // 코인 투입!
+	if (GetKeyState(KEY_5) < 0 && nCurTime - nButtonTime > 150) 
+	{ // 코인 투입!
 		nButtonTime = nCurTime;
 
-		if (nCoin < 100) {
+		if (nCoin < 100) 
+		{
 			nCoin++;
 			bCoin = true;
 		}
-		CSoundManager::getInstance()->StopBGM();
-		CSoundManager::getInstance()->StartEffect(SOUND_COIN);
+		CSoundSystem::getInstance()->StopBGM();
+		CSoundSystem::getInstance()->StartEffect(SOUND_COIN);
 	}
-	else if (GetKeyState(KEY_1) < 0 && nCurTime - nButtonTime > 150) {
+	else if (GetKeyState(KEY_1) < 0 && nCurTime - nButtonTime > 150) 
+	{
 		nButtonTime = nCurTime;
 
-		if (nCoin > 0) {
+		if (nCoin > 0) 
+		{
 			m_GameStep = STEP_MODE_SELECT;
 		}
 	}
@@ -92,13 +55,38 @@ void CIntro::PressKey()
 
 void CIntro::CheckCoin() 
 {
-	if (nCurTime - nTextTime > 200 && nCoin == 0) {
+	if (nCurTime - nTextTime > 200 && nCoin == 0) 
+	{
 		nTextTime = nCurTime;
-		if (bCoin) {
+		if (bCoin) 
+		{
 			bCoin = false;
 		}
-		else {
+		else 
+		{
 			bCoin = true;
 		}
 	}
+}
+
+void CIntro::Render()
+{
+	m_ResourceManeger->DrawingBackground(hBackbuffer, BACKGROUND01);
+
+	if (bCoin)
+	{
+		m_ResourceManeger->DrawingSprite(hBackbuffer, PUSH_1P_START);
+	}
+
+	if (nCoin >= 2)
+	{
+		m_ResourceManeger->DrawingSprite(hBackbuffer, CRADITS);
+	}
+	else
+	{
+		m_ResourceManeger->DrawingSprite(hBackbuffer, CRADIT);
+	}
+
+	TransparentBlt(hBackbuffer, 1114, 865, 28, 32, hNumberDC, (nCoin / 10) * 28, 0, 28, 32, RGB(R_COLOR, G_COLOR, B_COLOR));
+	TransparentBlt(hBackbuffer, 1142, 865, 28, 32, hNumberDC, (nCoin % 10) * 28, 0, 28, 32, RGB(R_COLOR, G_COLOR, B_COLOR));
 }

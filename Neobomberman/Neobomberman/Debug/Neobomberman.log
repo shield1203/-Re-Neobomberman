@@ -311,66 +311,7 @@ C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.h(34,20): error C2059: 구문 오류: '('
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.h(34,22): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.h(37,43): error C2061: 구문 오류: 식별자 'HWND'
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(7,58): error C2511: 'CBattleResult::CBattleResult(HWND,HDC)': 오버로드된 멤버 함수가 'CBattleResult'에 없습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.h(5): message : 'CBattleResult' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(7,90): error C2550: 'CBattleResult::{ctor}': 생성자 이니셜라이저 목록은 생성자 정의에만 사용할 수 있습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(8,2): error C2597: 비정적 멤버 'CBattleResult::bOn'에 대한 참조가 잘못되었습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(10,2): error C2065: 'hBackgroundDC': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(10,18): error C3861: 'CreateBmpDC': 식별자를 찾을 수 없습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(11,2): error C2065: 'hObjectDC': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(11,14): error C3861: 'CreateBmpDC': 식별자를 찾을 수 없습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(12,2): error C2065: 'hBomberDC': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(12,14): error C3861: 'CreateBmpDC': 식별자를 찾을 수 없습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(14,2): error C2065: 'battleStep': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(16,2): error C2597: 비정적 멤버 'CBattleResult::n1PWinCount'에 대한 참조가 잘못되었습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(17,2): error C2597: 비정적 멤버 'CBattleResult::n2PWinCount'에 대한 참조가 잘못되었습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(19,2): error C2065: 'dwSecond': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(20,2): error C2065: 'dwSecondTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(22,2): error C2065: 'dwTextAni': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(23,2): error C2065: 'dwTextAniTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(24,2): error C2065: 'dwAudienceAni': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(25,2): error C2065: 'dwAudienceAniTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(29,11): error C2065: 'hBackgroundDC': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(30,11): error C2065: 'hObjectDC': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(31,11): error C2065: 'hBomberDC': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(34,41): error C2511: 'void CBattleResult::Init(PLAYER)': 오버로드된 멤버 함수가 'CBattleResult'에 없습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.h(5): message : 'CBattleResult' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(35,2): error C2597: 비정적 멤버 'CBattleResult::bOn'에 대한 참조가 잘못되었습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(36,2): error C2065: 'battleStep': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(38,2): error C2671: 'CBattleResult::Init': 정적 멤버 함수에 'this' 포인터가 없습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(41,14): error C2597: 비정적 멤버 'CBattleResult::n1PWinCount'에 대한 참조가 잘못되었습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(41,14): error C3867: 'CBattleResult::n1PWinCount': 비표준 구문입니다. '&'를 사용하여 멤버 포인터를 만드세요.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(41,14): error C2105: '++'에 l-value가 필요합니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(44,14): error C2597: 비정적 멤버 'CBattleResult::n2PWinCount'에 대한 참조가 잘못되었습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(44,14): error C3867: 'CBattleResult::n2PWinCount': 비표준 구문입니다. '&'를 사용하여 멤버 포인터를 만드세요.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(44,14): error C2105: '++'에 l-value가 필요합니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(47,2): error C2065: 'dwSecond': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(49,2): error C2065: 'bomber': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(49,42): error C2065: 'hWnd': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(49,48): error C2065: 'hBackbuffer': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(50,2): error C2065: 'bomber': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(50,42): error C2065: 'hWnd': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(50,48): error C2065: 'hBackbuffer': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(52,2): error C2597: 비정적 멤버 'CGameFrame::nAlpha'에 대한 참조가 잘못되었습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(53,2): error C2597: 비정적 멤버 'CGameFrame::bFadeIn'에 대한 참조가 잘못되었습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(54,2): error C2597: 비정적 멤버 'CGameFrame::bFadeOut'에 대한 참조가 잘못되었습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(55,2): error C2065: 'BlendFunction': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(57,41): error C2039: 'StopChBGM': 'CSoundManager'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CSoundManager.h(3): message : 'CSoundManager' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(58,42): error C2039: 'StartChBGM': 'CSoundManager'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CSoundManager.h(3): message : 'CSoundManager' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(62,6): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(62,18): error C2065: 'dwTextAniTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(63,3): error C2065: 'dwTextAniTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(63,19): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(65,3): error C2065: 'dwTextAni': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(67,7): error C2065: 'dwTextAni': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(68,4): error C2065: 'dwTextAni': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(72,6): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(72,18): error C2065: 'dwAudienceAniTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(73,3): error C2065: 'dwAudienceAniTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(73,23): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(73,32): fatal error C1003: 오류 수가 100개를 초과했습니다. 컴파일을 중지합니다.
+C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleResult.cpp(5,9): fatal error C1083: 포함 파일을 열 수 없습니다. 'CSoundManager.h': No such file or directory
   CBomb.cpp
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomb.h(8,15): error C3646: 'player': 알 수 없는 재정의 지정자입니다.
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomb.h(8,15): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
@@ -396,34 +337,7 @@ C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomb.h(21,19): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomb.h(23,22): error C2061: 구문 오류: 식별자 'PLAYER'
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomb.h(24,20): error C2061: 구문 오류: 식별자 'DWORD'
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomb.cpp(6,73): error C2511: 'void CBomb::SetBomb(PLAYER,DWORD,DWORD)': 오버로드된 멤버 함수가 'CBomb'에 없습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomb.h(3): message : 'CBomb' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomb.cpp(7,2): error C2597: 비정적 멤버 'CBomb::bOn'에 대한 참조가 잘못되었습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomb.cpp(8,2): error C2597: 비정적 멤버 'CBomb::bExplosion'에 대한 참조가 잘못되었습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomb.cpp(9,2): error C2065: 'dwAni': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomb.cpp(10,2): error C2065: 'dwAniTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomb.cpp(12,2): error C2671: 'CBomb::SetBomb': 정적 멤버 함수에 'this' 포인터가 없습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomb.cpp(13,2): error C2671: 'CBomb::SetBomb': 정적 멤버 함수에 'this' 포인터가 없습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomb.cpp(14,2): error C2065: 'dwRange': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomb.cpp(17,37): error C2511: 'void CBomb::SetAni(DWORD)': 오버로드된 멤버 함수가 'CBomb'에 없습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomb.h(3): message : 'CBomb' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomb.cpp(18,6): error C2597: 비정적 멤버 'CBomb::bExplosion'에 대한 참조가 잘못되었습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomb.cpp(19,7): error C2065: 'player': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomb.cpp(20,47): error C2039: 'StartChEffect': 'CSoundManager'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CSoundManager.h(3): message : 'CSoundManager' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomb.cpp(23,3): error C2065: 'player': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomb.cpp(24,19): error C2065: 'dwAniTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomb.cpp(25,4): error C2065: 'dwAniTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomb.cpp(27,4): error C2065: 'dwAni': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomb.cpp(29,8): error C2065: 'dwAni': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomb.cpp(30,5): error C2597: 비정적 멤버 'CBomb::bOn'에 대한 참조가 잘못되었습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomb.cpp(31,5): error C2597: 비정적 멤버 'CBomb::bExplosion'에 대한 참조가 잘못되었습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomb.cpp(36,19): error C2065: 'dwAniTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomb.cpp(37,4): error C2065: 'dwAniTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomb.cpp(39,4): error C2065: 'dwAni': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomb.cpp(41,8): error C2065: 'dwAni': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomb.cpp(42,5): error C2065: 'dwAni': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomb.cpp(43,5): error C2597: 비정적 멤버 'CBomb::bExplosion'에 대한 참조가 잘못되었습니다.
+C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomb.cpp(4,9): fatal error C1083: 포함 파일을 열 수 없습니다. 'CSoundManager.h': No such file or directory
   CBomber.cpp
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.h(5,15): error C3646: 'player': 알 수 없는 재정의 지정자입니다.
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.h(5,15): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
@@ -453,77 +367,7 @@ C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.h(28,18): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.h(30,25): error C2061: 구문 오류: 식별자 'PLAYER'
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.h(31,20): error C2061: 구문 오류: 식별자 'DWORD'
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(13,70): error C2511: 'void CBomber::InitBomber(PLAYER,BOMBER,float)': 오버로드된 멤버 함수가 'CBomber'에 없습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.h(3): message : 'CBomber' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(14,2): error C2597: 비정적 멤버 'CBomber::bLife'에 대한 참조가 잘못되었습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(16,2): error C2671: 'CBomber::InitBomber': 정적 멤버 함수에 'this' 포인터가 없습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(17,2): error C2671: 'CBomber::InitBomber': 정적 멤버 함수에 'this' 포인터가 없습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(19,2): error C2065: 'direction': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(20,2): error C2065: 'state': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(23,3): error C2597: 비정적 멤버 'CBomber::fXPos'에 대한 참조가 잘못되었습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(24,3): error C2597: 비정적 멤버 'CBomber::fYPos'에 대한 참조가 잘못되었습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(25,3): error C2065: 'dwLocation': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(28,3): error C2597: 비정적 멤버 'CBomber::fXPos'에 대한 참조가 잘못되었습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(29,3): error C2597: 비정적 멤버 'CBomber::fYPos'에 대한 참조가 잘못되었습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(30,3): error C2065: 'dwLocation': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(32,2): error C2352: 'CBomber::SetRECT': 비정적 멤버 함수를 잘못 호출했습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.h(32): message : 'CBomber::SetRECT' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(34,2): error C2671: 'CBomber::InitBomber': 정적 멤버 함수에 'this' 포인터가 없습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(35,2): error C2065: 'dwMaxBombCount': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(36,2): error C2065: 'dwBombRange': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(38,2): error C2065: 'dwButtonTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(39,2): error C2065: 'dwAni': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(40,2): error C2065: 'dwAniTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(41,2): error C2065: 'dwDieCount': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(44,39): error C2511: 'void CBomber::SetAni(DWORD)': 오버로드된 멤버 함수가 'CBomber'에 없습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.h(3): message : 'CBomber' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(45,10): error C2065: 'state': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(45,17): error C2050: switch 식이 정수 계열이 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(48,20): error C2065: 'dwAniTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(49,5): error C2065: 'dwAniTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(51,9): error C2065: 'dwAni': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(52,6): error C2065: 'dwAni': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(55,6): error C2065: 'dwAni': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(63,8): error C2065: 'dwAni': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(63,36): error C2065: 'dwAniTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(64,5): error C2065: 'dwAniTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(65,5): error C2065: 'dwAni': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(67,13): error C2065: 'dwAni': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(67,41): error C2065: 'dwAniTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(68,5): error C2065: 'dwAniTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(69,5): error C2065: 'dwAni': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(72,21): error C2065: 'dwAniTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(73,6): error C2065: 'dwAniTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(75,10): error C2065: 'dwAni': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(76,11): error C2065: 'dwDieCount': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(77,8): error C2065: 'dwAni': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(78,8): error C2065: 'dwDieCount': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(81,8): error C2065: 'dwAni': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(84,15): error C2065: 'dwAni': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(85,11): error C2065: 'dwDieCount': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(86,8): error C2065: 'dwDieCount': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(89,8): error C2065: 'dwAni': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(91,7): error C2597: 비정적 멤버 'CBomber::fYPos'에 대한 참조가 잘못되었습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(93,15): error C2065: 'dwAni': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(94,11): error C2065: 'dwDieCount': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(95,8): error C2065: 'dwDieCount': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(98,8): error C2065: 'dwAni': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(100,7): error C2597: 비정적 멤버 'CBomber::fYPos'에 대한 참조가 잘못되었습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(103,7): error C2065: 'dwAni': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(111,20): error C2065: 'dwAniTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(112,5): error C2065: 'dwAniTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(114,9): error C2065: 'dwAni': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(115,6): error C2065: 'dwAni': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(124,2): error C2065: 'rtCollision': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(125,2): error C2065: 'rtCollision': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(125,22): error C2065: 'rtCollision': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(126,2): error C2065: 'rtCollision': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(127,2): error C2065: 'rtCollision': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(127,23): error C2065: 'rtCollision': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(129,2): error C2065: 'pLocation': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(129,16): error C2065: 'rtCollision': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(130,2): error C2065: 'pLocation': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(130,16): error C2065: 'rtCollision': 선언되지 않은 식별자입니다.
+C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomber.cpp(4,9): fatal error C1083: 포함 파일을 열 수 없습니다. 'CSoundManager.h': No such file or directory
   CBomberSelect.cpp
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleManager.h(11,44): error C2061: 구문 오류: 식별자 'HWND'
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleManager.h(13,42): error C2061: 구문 오류: 식별자 'HWND'
@@ -589,86 +433,7 @@ C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.h(31,17): error C3646: 'dwCurTime': 알 수 없는 재정의 지정자입니다.
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.h(31,17): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.h(45,43): error C2061: 구문 오류: 식별자 'HWND'
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(6,58): error C2511: 'CBomberSelect::CBomberSelect(HWND,HDC)': 오버로드된 멤버 함수가 'CBomberSelect'에 없습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.h(24): message : 'CBomberSelect' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(6,89): error C2550: 'CBomberSelect::{ctor}': 생성자 이니셜라이저 목록은 생성자 정의에만 사용할 수 있습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(7,2): error C2065: 'hBackgroundDC': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(7,18): error C3861: 'CreateBmpDC': 식별자를 찾을 수 없습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(8,2): error C2065: 'hSelectorDC': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(8,16): error C3861: 'CreateBmpDC': 식별자를 찾을 수 없습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(9,2): error C2065: 'hBomberNameDC': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(9,18): error C3861: 'CreateBmpDC': 식별자를 찾을 수 없습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(10,2): error C2065: 'hBombermansDC': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(10,18): error C3861: 'CreateBmpDC': 식별자를 찾을 수 없습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(12,10): error C2597: 비정적 멤버 'CBomberSelect::Player'에 대한 참조가 잘못되었습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(12,10): error C3867: 'CBomberSelect::Player': 비표준 구문입니다. '&'를 사용하여 멤버 포인터를 만드세요.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(12,10): error C2109: 첨자는 배열 또는 포인터 형식을 사용해야 합니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(13,10): error C2597: 비정적 멤버 'CBomberSelect::Player'에 대한 참조가 잘못되었습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(13,10): error C3867: 'CBomberSelect::Player': 비표준 구문입니다. '&'를 사용하여 멤버 포인터를 만드세요.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(13,10): error C2109: 첨자는 배열 또는 포인터 형식을 사용해야 합니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(15,2): error C2352: 'CBomberSelect::Init': 비정적 멤버 함수를 잘못 호출했습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.h(41): message : 'CBomberSelect::Init' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(19,11): error C2065: 'hBackgroundDC': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(20,11): error C2065: 'hSelectorDC': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(21,11): error C2065: 'hBomberNameDC': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(22,11): error C2065: 'hBombermansDC': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(32,28): error C2039: 'dwBombermanAni': 'BomberSelector'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.h(5): message : 'BomberSelector' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(40,2): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(45,2): error C2065: 'BlendFunction': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(53,5): error C2039: 'player': 'BomberSelector'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.h(5): message : 'BomberSelector' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(54,35): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(54,6): error C2039: 'dwButtonTime': 'BomberSelector'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.h(5): message : 'BomberSelector' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(55,27): error C2039: 'dwButtonTime': 'BomberSelector'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.h(5): message : 'BomberSelector' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(55,29): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(57,21): error C2039: 'player': 'BomberSelector'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.h(5): message : 'BomberSelector' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(59,47): error C2039: 'StartChEffect': 'CSoundManager'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CSoundManager.h(3): message : 'CSoundManager' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(63,38): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(63,6): error C2039: 'dwButtonTime': 'BomberSelector'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.h(5): message : 'BomberSelector' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(64,27): error C2039: 'dwButtonTime': 'BomberSelector'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.h(5): message : 'BomberSelector' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(64,29): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(66,29): error C2039: 'dwBombermanAni': 'BomberSelector'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.h(5): message : 'BomberSelector' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(71,47): error C2039: 'StartChEffect': 'CSoundManager'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CSoundManager.h(3): message : 'CSoundManager' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(73,42): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(73,11): error C2039: 'dwButtonTime': 'BomberSelector'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.h(5): message : 'BomberSelector' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(74,27): error C2039: 'dwButtonTime': 'BomberSelector'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.h(5): message : 'BomberSelector' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(74,29): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(76,29): error C2039: 'dwBombermanAni': 'BomberSelector'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.h(5): message : 'BomberSelector' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(85,47): error C2039: 'StartChEffect': 'CSoundManager'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CSoundManager.h(3): message : 'CSoundManager' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(87,40): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(87,11): error C2039: 'dwButtonTime': 'BomberSelector'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.h(5): message : 'BomberSelector' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(88,27): error C2039: 'dwButtonTime': 'BomberSelector'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.h(5): message : 'BomberSelector' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(88,29): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(90,29): error C2039: 'dwBombermanAni': 'BomberSelector'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.h(5): message : 'BomberSelector' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(99,47): error C2039: 'StartChEffect': 'CSoundManager'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CSoundManager.h(3): message : 'CSoundManager' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(101,42): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(101,11): error C2039: 'dwButtonTime': 'BomberSelector'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.h(5): message : 'BomberSelector' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(102,27): error C2039: 'dwButtonTime': 'BomberSelector'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.h(5): message : 'BomberSelector' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(102,29): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(104,29): error C2039: 'dwBombermanAni': 'BomberSelector'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.h(5): message : 'BomberSelector' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(113,47): error C2039: 'StartChEffect': 'CSoundManager'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CSoundManager.h(3): message : 'CSoundManager' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(113,47): fatal error C1003: 오류 수가 100개를 초과했습니다. 컴파일을 중지합니다.
+C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBomberSelect.cpp(4,9): fatal error C1083: 포함 파일을 열 수 없습니다. 'CSoundManager.h': No such file or directory
   CEnemy.cpp
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CEnemy.h(9,18): error C3646: 'dwLocation': 알 수 없는 재정의 지정자입니다.
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CEnemy.h(9,18): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
@@ -811,77 +576,9 @@ C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.h(22,19): error C2059: 구문 오류: '('
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.h(22,21): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.h(25,40): error C2061: 구문 오류: 식별자 'HWND'
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(6,52): error C2511: 'CGameScene::CGameScene(HWND,HDC)': 오버로드된 멤버 함수가 'CGameScene'에 없습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.h(4): message : 'CGameScene' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(6,84): error C2550: 'CGameScene::{ctor}': 생성자 이니셜라이저 목록은 생성자 정의에만 사용할 수 있습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(7,2): error C2065: 'hSceneDC': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(7,13): error C3861: 'CreateBmpDC': 식별자를 찾을 수 없습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(9,2): error C2065: 'storyStep': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(11,2): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(12,2): error C2065: 'dwObjectTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(13,2): error C2065: 'dwSecond': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(14,2): error C2065: 'dwSecondTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(15,2): error C2065: 'dwScene': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(17,2): error C2597: 비정적 멤버 'CGameScene::fObjectXPos'에 대한 참조가 잘못되었습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(18,2): error C2597: 비정적 멤버 'CGameScene::fObjectYPos'에 대한 참조가 잘못되었습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(20,2): error C2597: 비정적 멤버 'CGameFrame::nAlpha'에 대한 참조가 잘못되었습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(21,2): error C2597: 비정적 멤버 'CGameFrame::bFadeIn'에 대한 참조가 잘못되었습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(23,41): error C2039: 'StopChBGM': 'CSoundManager'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CSoundManager.h(3): message : 'CSoundManager' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(24,42): error C2039: 'StartChBGM': 'CSoundManager'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CSoundManager.h(3): message : 'CSoundManager' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(28,11): error C2065: 'hSceneDC': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(38,6): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(38,18): error C2065: 'dwObjectTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(39,3): error C2065: 'dwObjectTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(39,18): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(44,4): error C2065: 'dwScene': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(49,24): error C2039: 'Update': 'CGameScene'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.h(4): message : 'CGameScene' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(50,2): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(52,6): error C2065: 'dwScene': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(52,25): error C2065: 'bFadeIn': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(52,37): error C2065: 'bFadeOut': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(53,3): error C3861: 'CheckKey': 식별자를 찾을 수 없습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(54,3): error C3861: 'ObjectMove': 식별자를 찾을 수 없습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(57,7): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(57,19): error C2065: 'dwSecondTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(58,4): error C2065: 'dwSecondTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(58,19): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(59,4): error C2065: 'dwSecond': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(62,7): error C2065: 'dwSecond': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(63,4): error C2065: 'bFadeOut': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(67,6): error C2065: 'bFadeIn': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(67,17): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(67,29): error C2065: 'dwAlphaTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(68,3): error C2065: 'dwAlphaTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(68,17): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(69,3): error C3861: 'FadeIn': 식별자를 찾을 수 없습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(72,6): error C2065: 'bFadeOut': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(72,18): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(72,30): error C2065: 'dwAlphaTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(73,3): error C2065: 'dwAlphaTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(73,17): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(74,3): error C3861: 'FadeOut': 식별자를 찾을 수 없습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(76,8): error C2065: 'bFadeOut': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(77,4): error C2065: 'storyStep': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(81,9): error C2065: 'storyStep': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(85,9): error C2065: 'hBackbuffer': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(86,13): error C2065: 'hBackbuffer': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(86,50): error C2065: 'hSceneDC': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(86,60): error C2065: 'dwScene': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(88,17): error C2065: 'hBackbuffer': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(88,66): error C2065: 'hSceneDC': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(90,13): error C2065: 'hBackbuffer': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(90,50): error C2065: 'hSceneDC': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(90,60): error C2065: 'dwScene': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(92,9): error C2065: 'hBackbuffer': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(92,46): error C2065: 'hFadeDC': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(95,14): error C2065: 'hBackbuffer': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(95,44): error C2065: 'hFadeDC': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(95,70): error C2065: 'BlendFunction': 선언되지 않은 식별자입니다.
+C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameScene.cpp(4,9): fatal error C1083: 포함 파일을 열 수 없습니다. 'CSoundManager.h': No such file or directory
   CIntro.cpp
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CIntro.h(6,34): error C2504: 'CGameFrame': 기본 클래스를 정의하지 않았습니다.
+C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CIntro.h(4,34): error C2504: 'CGameFrame': 기본 클래스를 정의하지 않았습니다.
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameFrame.h(27,16): error C2535: 'void CGameFrame::FadeOut(void)': 멤버 함수를 이미 정의했거나 선언했습니다.
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameFrame.h(18): message : 'CGameFrame::FadeOut' 선언을 참조하십시오.
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameFrame.h(28,15): error C2535: 'void CGameFrame::FadeIn(void)': 멤버 함수를 이미 정의했거나 선언했습니다.
@@ -989,80 +686,7 @@ C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.h(26,23): error C3646: 'strMapFileName': 알 수 없는 재정의 지정자입니다.
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.h(26,23): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.h(37,40): error C2061: 구문 오류: 식별자 'HWND'
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(6,52): error C2511: 'CMapSelect::CMapSelect(HWND,HDC)': 오버로드된 멤버 함수가 'CMapSelect'에 없습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.h(13): message : 'CMapSelect' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(6,84): error C2550: 'CMapSelect::{ctor}': 생성자 이니셜라이저 목록은 생성자 정의에만 사용할 수 있습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(7,2): error C2065: 'hBackgroundDC': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(7,18): error C3861: 'CreateBmpDC': 식별자를 찾을 수 없습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(8,2): error C2065: 'hSelectorDC': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(8,16): error C3861: 'CreateBmpDC': 식별자를 찾을 수 없습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(9,2): error C2065: 'hNumDC': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(9,11): error C3861: 'CreateBmpDC': 식별자를 찾을 수 없습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(11,2): error C2352: 'CMapSelect::Init': 비정적 멤버 함수를 잘못 호출했습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.h(32): message : 'CMapSelect::Init' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(15,11): error C2065: 'hBackgroundDC': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(16,11): error C2065: 'hSelectorDC': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(17,11): error C2065: 'hNumDC': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(19,22): error C2065: 'miniMap': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(20,12): error C2065: 'miniMap': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(21,19): error C2065: 'miniMap': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(24,2): error C2065: 'miniMap': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(28,2): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(29,2): error C2065: 'dwAni': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(30,2): error C2065: 'dwAniTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(31,2): error C2065: 'dwButtonTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(39,2): error C2065: 'BlendFunction': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(55,20): error C2039: 'strFileName': 'MiniMap'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.h(8): message : 'MiniMap' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(56,19): error C2039: 'strFileName': 'MiniMap'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.h(8): message : 'MiniMap' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(61,19): error C2039: 'hMiniMapDC': 'MiniMap'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.h(8): message : 'MiniMap' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(61,21): error C3861: 'CreateBmpDC': 식별자를 찾을 수 없습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(63,3): error C2065: 'miniMap': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(70,37): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(70,49): error C2065: 'dwButtonTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(71,3): error C2065: 'dwButtonTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(71,18): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(75,14): error C2065: 'miniMap': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(77,46): error C2039: 'StartChEffect': 'CSoundManager'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CSoundManager.h(3): message : 'CSoundManager' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(79,41): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(79,53): error C2065: 'dwButtonTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(80,3): error C2065: 'dwButtonTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(80,18): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(85,15): error C2065: 'miniMap': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(88,15): error C2065: 'miniMap': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(91,46): error C2039: 'StartChEffect': 'CSoundManager'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CSoundManager.h(3): message : 'CSoundManager' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(93,39): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(93,51): error C2065: 'dwButtonTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(94,3): error C2065: 'dwButtonTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(94,18): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(96,3): error C2065: 'strMapFileName': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(96,20): error C2065: 'miniMap': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(99,46): error C2039: 'StartChEffect': 'CSoundManager'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CSoundManager.h(3): message : 'CSoundManager' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(104,6): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(104,18): error C2065: 'dwAniTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(105,3): error C2065: 'dwAniTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(105,15): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(107,7): error C2065: 'dwAni': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(108,4): error C2065: 'dwAni': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(111,4): error C2065: 'dwAni': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(117,2): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(123,17): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(123,29): error C2065: 'dwAlphaTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(124,3): error C2065: 'dwAlphaTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(124,17): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(128,18): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(128,30): error C2065: 'dwAlphaTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(129,3): error C2065: 'dwAlphaTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(129,17): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(133,32): error C2065: 'hWnd': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(133,38): error C2065: 'hBackbuffer': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(141,9): error C2065: 'hBackbuffer': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(141,20): fatal error C1003: 오류 수가 100개를 초과했습니다. 컴파일을 중지합니다.
+C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CMapSelect.cpp(4,9): fatal error C1083: 포함 파일을 열 수 없습니다. 'CSoundManager.h': No such file or directory
   CModeSelect.cpp
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameFrame.h(5,11): error C3646: 'hWnd': 알 수 없는 재정의 지정자입니다.
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameFrame.h(5,11): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
@@ -1123,85 +747,7 @@ C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.h(39,18): error C3646: 'Update': 알 수 없는 재정의 지정자입니다.
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.h(39,18): error C2059: 구문 오류: '('
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.h(39,20): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(6,54): error C2511: 'CModeSelect::CModeSelect(HWND,HDC)': 오버로드된 멤버 함수가 'CModeSelect'에 없습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.h(18): message : 'CModeSelect' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(6,85): error C2550: 'CModeSelect::{ctor}': 생성자 이니셜라이저 목록은 생성자 정의에만 사용할 수 있습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(7,2): error C2065: 'hBackgroundStoryDC': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(7,23): error C3861: 'CreateBmpDC': 식별자를 찾을 수 없습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(8,2): error C2065: 'hBackgroundBattleDC': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(8,24): error C3861: 'CreateBmpDC': 식별자를 찾을 수 없습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(9,2): error C2065: 'hSelectorDC': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(9,16): error C3861: 'CreateBmpDC': 식별자를 찾을 수 없습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(11,2): error C2065: 'gameStep': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(12,2): error C2065: 'mode': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(14,2): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(15,2): error C2065: 'dwButtonTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(16,2): error C2065: 'dwMoveTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(18,2): error C2597: 비정적 멤버 'CGameFrame::nAlpha'에 대한 참조가 잘못되었습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(19,2): error C2597: 비정적 멤버 'CGameFrame::bFadeIn'에 대한 참조가 잘못되었습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(20,2): error C2597: 비정적 멤버 'CGameFrame::bFadeOut'에 대한 참조가 잘못되었습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(21,2): error C2065: 'BlendFunction': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(23,42): error C2039: 'StartChBGM': 'CSoundManager'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CSoundManager.h(3): message : 'CSoundManager' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(27,11): error C2065: 'hBackgroundStoryDC': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(28,11): error C2065: 'hBackgroundBattleDC': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(29,11): error C2065: 'hSelectorDC': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(33,34): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(33,46): error C2065: 'dwButtonTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(35,3): error C2065: 'dwButtonTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(35,18): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(36,18): error C2039: 'state': 'Selector'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.h(4): message : 'Selector' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(37,16): error C2039: 'way': 'Selector'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.h(4): message : 'Selector' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(39,46): error C2039: 'StartChEffect': 'CSoundManager'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CSoundManager.h(3): message : 'CSoundManager' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(41,41): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(41,53): error C2065: 'dwButtonTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(42,3): error C2065: 'dwButtonTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(42,18): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(43,18): error C2039: 'state': 'Selector'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.h(4): message : 'Selector' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(44,16): error C2039: 'way': 'Selector'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.h(4): message : 'Selector' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(46,46): error C2039: 'StartChEffect': 'CSoundManager'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CSoundManager.h(3): message : 'CSoundManager' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(48,39): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(48,51): error C2065: 'dwButtonTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(48,10): error C2039: 'way': 'Selector'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.h(4): message : 'Selector' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(49,3): error C2065: 'dwButtonTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(49,18): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(50,18): error C2039: 'state': 'Selector'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.h(4): message : 'Selector' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(51,26): error C2039: 'dwSelectorAni': 'Selector'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.h(4): message : 'Selector' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(53,46): error C2039: 'StartChEffect': 'CSoundManager'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CSoundManager.h(3): message : 'CSoundManager' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(59,3): error C2065: 'mode': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(62,3): error C2065: 'mode': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(65,24): error C2039: 'state': 'Selector'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.h(4): message : 'Selector' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(68,8): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(68,7): error C2039: 'dwSelectorAniTime': 'Selector'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.h(4): message : 'Selector' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(68,7): error C2039: 'way': 'Selector'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.h(4): message : 'Selector' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(69,32): error C2039: 'dwSelectorAniTime': 'Selector'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.h(4): message : 'Selector' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(69,34): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(71,8): error C2039: 'dwSelectorAni': 'Selector'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.h(4): message : 'Selector' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(72,29): error C2039: 'dwSelectorAni': 'Selector'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.h(4): message : 'Selector' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(75,29): error C2039: 'dwSelectorAni': 'Selector'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.h(4): message : 'Selector' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(82,8): error C2065: 'dwCurTime': 선언되지 않은 식별자입니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(82,7): error C2039: 'dwSelectorAniTime': 'Selector'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.h(4): message : 'Selector' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(83,32): error C2039: 'dwSelectorAniTime': 'Selector'의 멤버가 아닙니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.h(4): message : 'Selector' 선언을 참조하십시오.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(83,32): fatal error C1003: 오류 수가 100개를 초과했습니다. 컴파일을 중지합니다.
+C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CModeSelect.cpp(4,9): fatal error C1083: 포함 파일을 열 수 없습니다. 'CSoundManager.h': No such file or directory
   CProcessManager.cpp
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameFrame.h(27,16): error C2535: 'void CGameFrame::FadeOut(void)': 멤버 함수를 이미 정의했거나 선언했습니다.
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameFrame.h(18): message : 'CGameFrame::FadeOut' 선언을 참조하십시오.
@@ -1216,11 +762,7 @@ C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CBattleManager.h(7): message : 'CBattleManager' 선언을 참조하십시오.
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CProcessManager.cpp(59,57): error C2440: '=': 'CBattleManager *'에서 'CGameFrame *'(으)로 변환할 수 없습니다.
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CProcessManager.cpp(59,34): message : 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
-  CSoundManager.cpp
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CSoundManager.cpp(30,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CSoundManager.cpp(36,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CSoundManager.cpp(65,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CSoundManager.cpp(81,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  CSoundSystem.cpp
   CStory.cpp
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameFrame.h(5,11): error C3646: 'hWnd': 알 수 없는 재정의 지정자입니다.
 C:\Users\김지호\Desktop\마시마로\Neobomberman-master\Neobomberman-master\Neobomberman\Neobomberman\CGameFrame.h(5,11): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.

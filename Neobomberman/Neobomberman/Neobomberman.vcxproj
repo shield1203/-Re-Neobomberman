@@ -158,7 +158,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="CBattle.h" />
-    <ClInclude Include="CBattleManager.h" />
+    <ClInclude Include="CBattleSystem.h" />
     <ClInclude Include="CBattleResult.h" />
     <ClInclude Include="CBomb.h" />
     <ClInclude Include="CBomber.h" />
@@ -169,14 +169,17 @@
     <ClInclude Include="CItem.h" />
     <ClInclude Include="CMapSelect.h" />
     <ClInclude Include="CModeSelect.h" />
-    <ClInclude Include="CProcessManager.h" />
-    <ClInclude Include="CSoundManager.h" />
+    <ClInclude Include="CProcessSystem.h" />
+    <ClInclude Include="CSoundSystem.h" />
     <ClInclude Include="CStory.h" />
-    <ClInclude Include="CStoryManager.h" />
+    <ClInclude Include="CStorySystem.h" />
     <ClInclude Include="Define.h" />
+    <ClInclude Include="DefineAPI.h" />
+    <ClInclude Include="DefineEnum.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="Neobomberman.h" />
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="CResourceManager.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="tinystr.h" />
     <ClInclude Include="tinyxml.h" />
@@ -184,7 +187,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CBattle.cpp" />
-    <ClCompile Include="CBattleManager.cpp" />
+    <ClCompile Include="CBattleSystem.cpp" />
     <ClCompile Include="CBattleResult.cpp" />
     <ClCompile Include="CBomb.cpp" />
     <ClCompile Include="CBomber.cpp" />
@@ -196,10 +199,11 @@
     <ClCompile Include="CItem.cpp" />
     <ClCompile Include="CMapSelect.cpp" />
     <ClCompile Include="CModeSelect.cpp" />
-    <ClCompile Include="CProcessManager.cpp" />
-    <ClCompile Include="CSoundManager.cpp" />
+    <ClCompile Include="CProcessSystem.cpp" />
+    <ClCompile Include="CResourceManager.cpp" />
+    <ClCompile Include="CSoundSystem.cpp" />
     <ClCompile Include="CStory.cpp" />
-    <ClCompile Include="CStoryManager.cpp" />
+    <ClCompile Include="CStorySystem.cpp" />
     <ClCompile Include="Neobomberman.cpp" />
     <ClCompile Include="tinystr.cpp" />
     <ClCompile Include="tinyxml.cpp" />

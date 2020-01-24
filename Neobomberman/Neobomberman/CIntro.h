@@ -1,17 +1,18 @@
 #pragma once
 #include"framework.h"
 
-enum  AA { asd };
+class CGameFrame;
+class CResourceManager;
 
-class CIntro : public CGameFrame {
+enum BACKGROUND : unsigned int { BACKGROUND01 };
+enum SPRITES { PUSH_1P_START, CRADIT, CRADITS, COIN_COUNT };
+
+class CIntro : public CGameFrame 
+{
 private:
-	
-
-	HDC hIntroDC = nullptr;
-	HDC hNumberDC = nullptr;
-	HDC hTextDC = nullptr;
-
 	GAME_STEP m_GameStep = STEP_INTRO;
+
+	CResourceManager* m_ResourceManeger = nullptr;
 
 	int nCurTime = 0;
 	int nButtonTime = 0;
@@ -20,14 +21,13 @@ private:
 
 	bool bCoin = false;
 public:
-	CIntro(HWND hWnd, HDC hBackbuffer);
+	CIntro(HDC hBackbuffer);
 	~CIntro();
 
-	void PressKey();
+	void CheckKey();
 	void CheckCoin();
 
 	virtual void Init();
-	virtual void LoadData();
 	virtual GAME_STEP Update();
 	virtual void Render();
 };
